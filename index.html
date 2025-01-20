@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Full-Screen Graphics Page</title>
     <style>
         /* CSS Reset */
         * {
@@ -52,24 +53,31 @@
             margin-top: 20px; /* Space above the footer */
             font-size: 14px; /* Smaller font size for footer */
         }
+
+        a:focus {
+            outline: 2px solid #005fcc; /* Example focus style for links */
+        }
     </style>
 </head>
 <body>
-    <div class="image-container">
+    <h1>Midas IT LLC Capabilities</h1>
+    <div class="image-container" role="region" aria-labelledby="image-gallery">
+        <h2 id="image-gallery" class="sr-only">Image Gallery</h2> <!-- Screen reader only heading -->
         <figure>
-            <img src="Capability_Statement_Page1.png" alt="Description of Image 1">
-            <figcaption>Capability Statement Page 1</figcaption>
+            <img src="Capability_Statement_Page2.png" alt="Description of Image 1">
+            <figcaption>Capability Statement_Page 1</figcaption>
         </figure>
         <figure>
             <img src="Capability_Statement_Page2.png" alt="Description of Image 2">
-            <figcaption>Capability Statement Page 2</figcaption>
+            <figcaption>Capability Statement_Page 2</figcaption>
         </figure>
     </div>
     <footer>
         <p>&copy; 2024 Midas IT LLC. All rights reserved.</p>
         <p>
-            <a href="mailto:inderpreet.singh@midasitconsulting.com">Contact Us</a>
+            <a href="mailto:inderpreet.singh@midasitconsulting.com">Contact Us</a> <!-- Link to contact us via email -->
         </p>
     </footer>
 </body>
 </html>
+
