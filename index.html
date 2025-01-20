@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,32 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midas IT LLC Capability Statement</title>
     <style>
-        body {
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        html, body {
+            height: 100%; /* Full height */
+            width: 100%; /* Full width */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
             background-color: #f0f0f0; /* Light gray background */
-            padding: 20px; /* Add padding around the body */
             font-family: Arial, sans-serif; /* Set a font for the page */
         }
+
         h1 {
             text-align: center; /* Center align the heading */
-            margin-bottom: 20px; /* Space below the heading */
+            margin: 20px 0; /* Space above and below the heading */
         }
+
         .image-container {
             display: flex; /* Use flexbox for layout */
             justify-content: center; /* Center align items horizontally */
             flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+            max-width: 100%; /* Ensure container does not exceed viewport width */
         }
+
         figure {
             margin: 10px; /* Add margin around each figure */
             text-align: center; /* Center align the caption */
+            max-width: 100%; /* Ensure figure does not exceed viewport width */
         }
+
         img {
             max-width: 100%; /* Make images responsive */
             height: auto; /* Maintain aspect ratio */
             transition: transform 0.3s; /* Smooth transition for hover effect */
         }
+
         img:hover {
             transform: scale(1.05); /* Slightly enlarge the image on hover */
         }
+
         footer {
             text-align: center; /* Center align the footer text */
             margin-top: 20px; /* Space above the footer */
@@ -39,18 +57,16 @@
     </style>
 </head>
 <body>
+    <h1>Welcome to My Full-Screen Graphics Page</h1>
     <div class="image-container">
         <figure>
-            <img src="Capability_Statement_Page1.png" alt="Capability_Statement_Page1">
-            <figcaption>Caption for Image 1</figcaption>
+            <img src="Capability_Statement_Page1.png" alt="Description of Image 1">
+            <figcaption>Capability_Statement_Page1</figcaption>
         </figure>
         <figure>
-            <img src="Capability_Statement_Page2.png" alt="Capability_Statement_Page2">
-            <figcaption>Caption for Image 2</figcaption>
+            <img src="Capability_Statement_Page2.png" alt="Description of Image 2">
+            <figcaption>Capability_Statement_Page2</figcaption>
         </figure>
     </div>
-    <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-    </footer>
 </body>
 </html>
