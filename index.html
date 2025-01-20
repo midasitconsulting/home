@@ -5,21 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midas IT LLC Capability Statement</title>
     <style>
-        /* Center align images */
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            padding: 20px; /* Add padding around the body */
+            font-family: Arial, sans-serif; /* Set a font for the page */
+        }
+        h1 {
+            text-align: center; /* Center align the heading */
+            margin-bottom: 20px; /* Space below the heading */
+        }
         .image-container {
-            text-align: center; /* Center align the content */
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center align items horizontally */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+        }
+        figure {
+            margin: 10px; /* Add margin around each figure */
+            text-align: center; /* Center align the caption */
         }
         img {
             max-width: 100%; /* Make images responsive */
             height: auto; /* Maintain aspect ratio */
+            transition: transform 0.3s; /* Smooth transition for hover effect */
+        }
+        img:hover {
+            transform: scale(1.05); /* Slightly enlarge the image on hover */
+        }
+        footer {
+            text-align: center; /* Center align the footer text */
+            margin-top: 20px; /* Space above the footer */
+            font-size: 14px; /* Smaller font size for footer */
         }
     </style>
 </head>
 <body>
     <div class="image-container">
-    <img src="Capability_Statement_Page1.png" alt="Capability_Statement_Page1">
-    <img src="Capability_Statement_Page2.png" alt="Capability_Statement_Page2">
-        <!-- Add more images as needed -->
+        <figure>
+            <img src="Capability_Statement_Page1.png" alt="Capability_Statement_Page1">
+            <figcaption>Caption for Image 1</figcaption>
+        </figure>
+        <figure>
+            <img src="Capability_Statement_Page2.png" alt="Capability_Statement_Page2">
+            <figcaption>Caption for Image 2</figcaption>
+        </figure>
     </div>
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
